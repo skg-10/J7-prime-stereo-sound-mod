@@ -11,4 +11,10 @@
 ## SUPPORTED DEVICES
 * Samsung Galaxy J7 Prime (Exynos)
 
+## INSTRUCTIONS
+
+Reboot to recovery
+Install `TWRP_Stereo_sound_mod_J7_Prime.zip `
+Reboot system
+
 
