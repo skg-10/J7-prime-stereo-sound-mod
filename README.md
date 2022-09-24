@@ -11,10 +11,20 @@
 ## SUPPORTED DEVICES
 * Samsung Galaxy J7 Prime (Exynos)
 
-## INSTRUCTIONS
+## PREREQUISITES
+* A rooted J7 Prime with TWRP installed.
 
+## INSTRUCTIONS
 * Reboot to recovery
-* Install `TWRP_Stereo_sound_mod_J7_Prime.zip `
+* Install `TWRP_Stereo_sound_mod_J7_Prime.zip`
 * Reboot system
 
+## RESTORING DEFAULT AUDIO CONFIG
+* Reboot to recovery
+* Install `TWRP_Restore_default_mixer_J7_Prime.zip`
+* Reboot system
 
+### Note:
+* Alternatively, you can rename `mixer_paths.xml.bak0` located in `system/etc` as `mixer_paths.xml`.
+* Don't forget to change the file permissions to 644 (rw- r-- r--), else you may end up in a bootloop. 
+* If that happens, you'll need to go to the files and change their permissions via file manager in TWRP.
