@@ -1,0 +1,32 @@
+ui_print("*********************************");
+ui_print("       XDA Developer: SKG1       ");
+ui_print("       J7 Prime Stereo Mod       ");
+ui_print("*********************************");
+
+show_progress(1.000000, 0);
+ui_print("Mounting filesystems...");
+run_program("/sbin/busybox", "mount", "/system");
+set_progress(0.100000);
+ui_print("Checking for previous install...");
+ifelse(run_program("/system/bin/sh", "-c", "test -f /system/etc/mixer_paths.xml.bak0") == "0",
+  (
+	ui_print("prevoius backup found, skipping backup...");
+  ),
+  (
+    ui_print("no backups found, creating backup...");
+	run_program("/sbin/busybox", "mv", "/system/etc/mixer_paths.xml", "/system/etc/mixer_paths.xml.bak0");
+	ui_print("Backup complete...");
+  )
+);
+
+ui_print("Extracting files...");
+package_extract_dir("system", "/system");
+set_progress(0.300000);
+
+ui_print("Setting permissions...");
+set_perm(0, 0, 0644, "/system/etc/mixer_paths.xml");
+unmount("/system");
+
+ui_print("Backup can be found in system/etc, file ending with .bak0 ...!");
+ui_print("Reboot and Enjoy ...");
+set_progress(1.000000);

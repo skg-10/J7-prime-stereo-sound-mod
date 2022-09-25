@@ -1,0 +1,20 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA1-Digest-Manifest: 5OhDER/sl8T8pZK2M0FKpBZGQPs=
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: AA9NsAb1xog5JarS8NhWG0a5AEg=
+
+Name: system/app/SystemUI.apk
+SHA1-Digest: q/wFMr8+3Z+IuPdvJT5vi4D7f2M=
+
+Name: system/framework/framework-res.apk
+SHA1-Digest: vzCcywBLObuUkK3Nu6VLXtZpoEo=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: JrSsiJprJJ9rHUfJIcoiHRO7x24=
+
+Name: system/app/AcerRing.apk
+SHA1-Digest: 7SoJwFciKRTv5YtKv3pcOkLgcJk=
+
+
