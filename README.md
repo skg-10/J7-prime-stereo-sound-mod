@@ -4,24 +4,24 @@
 ## DISCLAIMER (Read this carefully!)
 * The warranty of your device is now void and I'm not responsible for any damage you made to your device. You have been warned!
 
-## FEATURES
+## Features
 * This sound mod boosts the main speaker slightly and sets the earpiece to the max volume possible without damaging them.
 * This module creates backup of original `mixer_paths.xml` during installation and can be found in `system/etc`, file ending with .bak0
 
-## SUPPORTED DEVICES
+## Supported Devices
 * Samsung Galaxy J7 Prime (Exynos)
 
-## PREREQUISITES
+## Prerequisites
 * A rooted J7 Prime with TWRP installed.
 
-## INSTRUCTIONS
+## Instructions
 * Extract `J7-prime-stereo-sound-mod-main.zip`
 * Copy `TWRP_Stereo_sound_mod_J7_Prime.zip` to phone internal storage
 * Reboot to recovery
 * Install `TWRP_Stereo_sound_mod_J7_Prime.zip`
 * Reboot system
 
-## RESTORING DEFAULT AUDIO CONFIG
+## Restoring Default Audio Config
 * Reboot to recovery
 * Install `TWRP_Restore_default_mixer_J7_Prime.zip`
 * Reboot system
