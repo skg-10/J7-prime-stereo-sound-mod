@@ -15,6 +15,8 @@
 * A rooted J7 Prime with TWRP installed.
 
 ## INSTRUCTIONS
+* Extract `J7-prime-stereo-sound-mod-main.zip`
+* Copy `TWRP_Stereo_sound_mod_J7_Prime.zip` to phone internal storage
 * Reboot to recovery
 * Install `TWRP_Stereo_sound_mod_J7_Prime.zip`
 * Reboot system
