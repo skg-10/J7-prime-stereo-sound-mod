@@ -10,18 +10,19 @@ set_progress(0.100000);
 ui_print("Checking for previous install...");
 ifelse(run_program("/system/bin/sh", "-c", "test -f /system/etc/mixer_paths.xml.bak0") == "0",
   (
-	ui_print("prevoius backup found, skipping backup...");
+	ui_print("previous backup found.... ");
+	ui_print("restoring original files ");
+	run_program("/sbin/busybox", "mv", "/system/etc/mixer_paths.xml.bak0", "/system/etc/mixer_paths.xml");
   ),
   (
     ui_print("no backups found, creating backup...");
 	run_program("/sbin/busybox", "mv", "/system/etc/mixer_paths.xml", "/system/etc/mixer_paths.xml.bak0");
 	ui_print("Backup complete...");
+	ui_print("Extracting files...");
+        package_extract_dir("system", "/system");
+        set_progress(0.300000);
   )
 );
-
-ui_print("Extracting files...");
-package_extract_dir("system", "/system");
-set_progress(0.300000);
 
 ui_print("Setting permissions...");
 set_perm(0, 0, 0644, "/system/etc/mixer_paths.xml");
