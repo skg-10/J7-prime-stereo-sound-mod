@@ -22,6 +22,7 @@
 * Reboot system
 
 ## Restoring Default Audio Config
+* Copy `TWRP_Restore_default_mixer_J7_Prime.zip` to phone internal storage
 * Reboot to recovery
 * Install `TWRP_Restore_default_mixer_J7_Prime.zip`
 * Reboot system
